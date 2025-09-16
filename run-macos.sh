@@ -9,4 +9,4 @@ container_name=${dirname}_dev
     --env="XAUTHORITY=$XAUTH" \
     --volume="$XAUTH:$XAUTH" \
     --privileged \
-  ${dirname}
+  "paulrobinette/${dirname}:v1"

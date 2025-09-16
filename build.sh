@@ -1,3 +1,5 @@
 dirname=${PWD##*/}
 
-docker build -t "paulrobinette/${dirname}:v1" .
+docker build \
+  --no-cache \
+  -t "paulrobinette/${dirname}:v1" .
